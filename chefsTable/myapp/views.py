@@ -4,14 +4,14 @@ from datetime import  datetime
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('Welcome to Bollywood Restaurant!')
+    return HttpResponse('Welcome to Lemon Tree Restaurant!')
 
 def display_date(request):
     date_joined = datetime.today().year
     return HttpResponse(date_joined)
 
 def menu(request):
-    text = """<h1 style = "color: #F4CE14;"> This is Bollywood Restaurant</h1>"""
+    text = """<h1 style = "color: #F4CE14;"> This is Lemon Tree Restaurant</h1>"""
     return HttpResponse(text)
 
 def drinks(request,drink_name):
